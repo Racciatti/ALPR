@@ -1,0 +1,14 @@
+Análise de Erros: Confusões Mais Relevantes
+==================================================
+As 10 confusões mais impactantes (Classe Verdadeira → Classe Prevista):
+
+- 1.29% das vezes que era um 'B', o modelo previu '8' (total de 4 erros).
+- 0.97% das vezes que era um 'J', o modelo previu '7' (total de 3 erros).
+- 0.65% das vezes que era um '3', o modelo previu 'J' (total de 2 erros).
+- 0.65% das vezes que era um '4', o modelo previu 'Z' (total de 2 erros).
+- 0.33% das vezes que era um 'D', o modelo previu 'L' (total de 1 erros).
+- 0.33% das vezes que era um 'E', o modelo previu 'T' (total de 1 erros).
+- 0.33% das vezes que era um 'I', o modelo previu 'J' (total de 1 erros).
+- 0.33% das vezes que era um 'Q', o modelo previu 'D' (total de 1 erros).
+- 0.33% das vezes que era um 'T', o modelo previu 'Y' (total de 1 erros).
+- 0.32% das vezes que era um '2', o modelo previu '6' (total de 1 erros).
