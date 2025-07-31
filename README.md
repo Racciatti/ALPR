@@ -39,10 +39,10 @@ Entrada: (30, 40, 1) - Imagens em escala de cinza
 Dados Originais → Redimensionamento (40x30) → Binarização (Otsu) → Limpeza → Aumento de Dados
 ```
 
-- **Redimensionamento**: 40x30 pixels usando `cv2.INTER_AREA`
-- **Binarização**: Método de Otsu para segmentação otimal
-- **Limpeza automática**: Remoção de ~10% das amostras ruidosas
-- **Data augmentation**: 10x aumento com transformações geométricas
+- **Redimensionamento**: 100x75 --> 40x30 (redução de 6.25x no número de pixels)
+- **Binarização**: Método de Otsu para segmentação ótima
+- **Limpeza automática**: Remoção das amostras de baixa qualidade (~10% do dataset)
+- **Data augmentation**: Aumento de 10x do número de amostras
 
 ### 2. Estrutura dos Dados
 ```
@@ -50,7 +50,7 @@ data/
 ├── train/           # Dados originais de treinamento
 ├── eval/            # Dados originais de teste
 ├── resized/         # Imagens redimensionadas
-├── thresholded/     # Binarização Otsu
+├── thresholded/     # Imagens limizarizadas
 ├── cleaned/         # Dados limpos
 ├── augmented_data/  # Dados aumentados (treinamento final)
 └── processed_eval/  # Dados de avaliação processados
