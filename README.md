@@ -64,12 +64,6 @@ data/
 3. **Polimento final**: Fine-tuning com taxa de aprendizado ultra-baixa
 4. **Quantização**: Conversão para INT8 usando TensorFlow Lite
 
-### Hiperparâmetros Otimizados
-- **Taxa de aprendizado**: 5e-4 (melhor entre 1e-3, 5e-4, 1e-4)
-- **Arquitetura**: Capacidade média [32, 64] filtros, 128 neurônios dense
-- **Regularização**: Dropout 0.4, BatchNormalization
-- **Otimizador**: Adam com early stopping
-
 ## 🚀 Instalação e Uso
 
 ### Pré-requisitos
@@ -82,6 +76,8 @@ CUDA (opcional, para treinamento com GPU)
 ```bash
 git clone https://github.com/racciatti/alpr.git
 cd alpr
+python -m venv venv
+ativar ambiente virtual (depende do OS)
 pip install -r requirements.txt
 ```
 
@@ -106,9 +102,7 @@ prediction = interpreter.get_tensor(output_details['index'])
 alpr/
 ├── data.ipynb              # Pipeline de processamento de dados
 ├── model.ipynb             # Treinamento e otimização do modelo
-├── data-exploration.ipynb  # Análise exploratória
-├── preprocessing/          # Utilitários de pré-processamento
-├── challenge_report.md     # Relatório técnico detalhado
+├── challenge_report.md     # Relatório para competição
 ├── requirements.txt        # Dependências
 └── README.md              # Este arquivo
 ```
@@ -132,7 +126,6 @@ O modelo foi otimizado especificamente para:
 ### Ambiente de Teste
 - **Hardware**: Google Colab GPU T4
 - **Dataset**: 251.471 imagens de treinamento, 10.650 de validação
-- **Tempo de treinamento**: ~2 horas (incluindo otimização de hiperparâmetros)
 
 ## 📄 Licença
 
