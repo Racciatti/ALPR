@@ -137,4 +137,4 @@ Contribuições são bem-vindas! Por favor, abra uma issue ou pull request para 
 
 ---
 
-**Desenvolvido com foco em eficiência e precisão para aplicações reais de ALPR** 🚗
+**Desenvolvido ao longo de ~6 horas para uma competição da FCT UNESP.**
