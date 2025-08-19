@@ -131,10 +131,6 @@ The model was specifically optimized for:
 
 This project is licensed under [LICENSE](LICENSE).
 
-## Contributions
-
-Contributions are welcome! Please open an issue or pull request to discuss significant changes.
-
 ---
 
 # ALPR - Automatic License Plate Recognition
@@ -269,9 +265,3 @@ O modelo foi otimizado especificamente para:
 ## Licença
 
 Este projeto está licenciado sob [LICENSE](LICENSE).
-
-## Contribuições
-
-Contribuições são bem-vindas! Por favor, abra uma issue ou pull request para discutir mudanças significativas.
-
----
