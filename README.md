@@ -2,11 +2,11 @@
 
 > A high-performance CNN for vehicle license plate character recognition optimized for edge computing
 
-## 📋 Overview
+## Overview
 
 This project implements a complete **Automatic License Plate Recognition (ALPR)** solution specifically focused on individual character recognition using a custom Convolutional Neural Network. The main objective was to develop a model that combines **high accuracy** with **extreme computational efficiency**.
 
-### 🎯 Results Achieved
+### Results Achieved
 
 | Metric | Original Model (FP32) | Quantized Model (INT8) | Improvement |
 |---------|------------------------|--------------------------|----------|
@@ -14,7 +14,7 @@ This project implements a complete **Automatic License Plate Recognition (ALPR)*
 | **Inference Time** | 70.41ms | 0.49ms | **143x faster** |
 | **Model Size** | ~2.4MB | ~0.6MB | **4x smaller** |
 
-## 🏗️ Model Architecture
+## Model Architecture
 
 ### Custom CNN (LeNet-inspired)
 ```
@@ -32,7 +32,7 @@ Input: (30, 40, 1) - Grayscale images
 - **Digits**: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 - **Letters**: A, B, C, D, E, F, G, H, I, J, K, L, M, N, P, Q, R, S, T, U, V, W, X, Y, Z
 
-## 🔄 Processing Pipeline
+## Processing Pipeline
 
 ### 1. Preprocessing
 ```
@@ -56,7 +56,7 @@ data/
 └── processed_eval/  # Processed evaluation data
 ```
 
-## ⚙️ Optimization and Training
+## Optimization and Training
 
 ### Systematic Methodology
 1. **Hyperparameter search**: Learning rate, model capacity, dropout
@@ -64,7 +64,7 @@ data/
 3. **Final polishing**: Fine-tuning with ultra-low learning rate
 4. **Quantization**: Conversion to INT8 using TensorFlow Lite
 
-## 🚀 Installation and Usage
+## Installation and Usage
 
 ### Prerequisites
 ```bash
@@ -96,7 +96,7 @@ interpreter.invoke()
 prediction = interpreter.get_tensor(output_details['index'])
 ```
 
-## 📊 Project Structure
+## Project Structure
 
 ```
 alpr/
@@ -107,7 +107,7 @@ alpr/
 └── README.md              # This file
 ```
 
-## 🔬 Key Technologies
+## Key Technologies
 
 - **TensorFlow/Keras**: Deep learning framework
 - **OpenCV**: Image processing
@@ -115,7 +115,7 @@ alpr/
 - **TensorFlow Lite**: Optimization and quantization
 - **scikit-learn**: Metrics and evaluation
 
-## 📈 Performance
+## Performance
 
 The model was specifically optimized for:
 - **Real-time applications**
@@ -127,17 +127,13 @@ The model was specifically optimized for:
 - **Hardware**: Google Colab GPU T4
 - **Dataset**: 251,471 training images, 10,650 validation images
 
-## 📄 License
+## License
 
 This project is licensed under [LICENSE](LICENSE).
 
-## 🤝 Contributions
+## Contributions
 
 Contributions are welcome! Please open an issue or pull request to discuss significant changes.
-
----
-
-**Developed over ~6 hours for a FCT UNESP competition.**
 
 ---
 
@@ -145,11 +141,11 @@ Contributions are welcome! Please open an issue or pull request to discuss signi
 
 > Uma CNN de alto desempenho para reconhecimento de caracteres de placas veiculares otimizada para edge computing
 
-## 📋 Visão Geral
+## Visão Geral
 
 Este projeto implementa uma solução completa de **Reconhecimento Automático de Placas (ALPR)** focada especificamente no reconhecimento de caracteres individuais usando uma Rede Neural Convolucional customizada. O objetivo principal foi desenvolver um modelo que combine **alta precisão** com **extrema eficiência computacional**.
 
-### 🎯 Resultados Alcançados
+### Resultados Alcançados
 
 | Métrica | Modelo Original (FP32) | Modelo Quantizado (INT8) | Melhoria |
 |---------|------------------------|--------------------------|----------|
@@ -157,7 +153,7 @@ Este projeto implementa uma solução completa de **Reconhecimento Automático d
 | **Tempo de Inferência** | 70,41ms | 0,49ms | **143x mais rápido** |
 | **Tamanho do Modelo** | ~2,4MB | ~0,6MB | **4x menor** |
 
-## 🏗️ Arquitetura do Modelo
+## Arquitetura do Modelo
 
 ### CNN Customizada (Inspirada na LeNet)
 ```
@@ -175,7 +171,7 @@ Entrada: (30, 40, 1) - Imagens em escala de cinza
 - **Dígitos**: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 - **Letras**: A, B, C, D, E, F, G, H, I, J, K, L, M, N, P, Q, R, S, T, U, V, W, X, Y, Z
 
-## 🔄 Pipeline de Processamento
+## Pipeline de Processamento
 
 ### 1. Pré-processamento
 ```
@@ -199,7 +195,7 @@ data/
 └── processed_eval/  # Dados de avaliação processados
 ```
 
-## ⚙️ Otimização e Treinamento
+## Otimização e Treinamento
 
 ### Metodologia Sistemática
 1. **Busca de hiperparâmetros**: Taxa de aprendizado, capacidade do modelo, dropout
@@ -207,7 +203,7 @@ data/
 3. **Polimento final**: Fine-tuning com taxa de aprendizado ultra-baixa
 4. **Quantização**: Conversão para INT8 usando TensorFlow Lite
 
-## 🚀 Instalação e Uso
+## Instalação e Uso
 
 ### Pré-requisitos
 ```bash
@@ -239,7 +235,7 @@ interpreter.invoke()
 prediction = interpreter.get_tensor(output_details['index'])
 ```
 
-## 📊 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 alpr/
@@ -250,7 +246,7 @@ alpr/
 └── README.md              # Este arquivo
 ```
 
-## 🔬 Principais Tecnologias
+## Principais Tecnologias
 
 - **TensorFlow/Keras**: Framework de deep learning
 - **OpenCV**: Processamento de imagens
@@ -258,7 +254,7 @@ alpr/
 - **TensorFlow Lite**: Otimização e quantização
 - **scikit-learn**: Métricas e avaliação
 
-## 📈 Performance
+## Performance
 
 O modelo foi otimizado especificamente para:
 - **Aplicações em tempo real**
@@ -270,14 +266,12 @@ O modelo foi otimizado especificamente para:
 - **Hardware**: Google Colab GPU T4
 - **Dataset**: 251.471 imagens de treinamento, 10.650 de validação
 
-## 📄 Licença
+## Licença
 
 Este projeto está licenciado sob [LICENSE](LICENSE).
 
-## 🤝 Contribuições
+## Contribuições
 
 Contribuições são bem-vindas! Por favor, abra uma issue ou pull request para discutir mudanças significativas.
 
 ---
-
-**Desenvolvido ao longo de ~6 horas para uma competição da FCT UNESP.**
